@@ -14,8 +14,6 @@ Desenvolvendo um jogo de adivinhação e praticando lógica de programação com
 
 Saiba mais sobre o curso [aqui](https://cursos.alura.com.br/course/logica-programacao-javascript-html) ou acompanhe as minhas anotações abaixo. :arrow_down:
 
-***
-
 ## 1. Comece a programar hoje
 
 ### **Visão além do alcance 1**

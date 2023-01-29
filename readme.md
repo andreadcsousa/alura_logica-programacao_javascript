@@ -12,7 +12,7 @@ Desenvolvendo um jogo de adivinhação e praticando lógica de programação com
 8. [Interaja de maneira diferente com o usuário](#8-interaja-de-maneira-diferente-com-o-usuário)
 9. [Trabalhe com muitos dados](#9-trabalhe-com-muitos-dados)
 
-Saiba mais sobre o curso [aqui](https://cursos.alura.com.br/course/logica-programacao-javascript-html).
+Saiba mais sobre o curso [aqui](https://cursos.alura.com.br/course/logica-programacao-javascript-html) ou acompanhe as minhas anotações abaixo. :arrow_down:
 
 ***
 
@@ -490,4 +490,4 @@ var frutas = ["maçã", "cajú", "manga"];
 frutas.push("pera");
 ```
 
-[🔝 Voltar ao topo 🔝](#javascript-e-html---lógica-de-programação)
+[:arrow_up: Voltar ao topo :arrow_up:](#javascript-e-html---lógica-de-programação)

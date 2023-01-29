@@ -1,6 +1,18 @@
-# Anotações: JavaScript e HTML - Lógica de Programação
+# JavaScript e HTML - Lógica de Programação
 
-## 01. Comece a programar hoje
+1. [1. Comece a programar hoje](#1-comece-a-programar-hoje)
+2. [2. Comunique-se com o usuário](#2-comunique-se-com-o-usuário)
+3. [3. Torne seu programa dinâmico com variáveis](#3-torne-seu-programa-dinâmico-com-variáveis)
+4. [4. Crie suas próprias funcionalidades](#4-crie-suas-próprias-funcionalidades)
+5. [5. Pratique resolvendo problemas do seu dia a dia](#5-pratique-resolvendo-problemas-do-seu-dia-a-dia)
+6. [6. Execute códigos diferentes dependendo da condição](#6-execute-códigos-diferentes-dependendo-da-condição)
+7. [7. Repita tarefas](#7-repita-tarefas)
+8. [8. Interaja de maneira diferente com o usuário](#8-interaja-de-maneira-diferente-com-o-usuário)
+9. [9. Trabalhe com muitos dados](#9-trabalhe-com-muitos-dados)
+
+***
+
+## 1. Comece a programar hoje
 
 ### **Visão além do alcance 1**
 
@@ -19,7 +31,8 @@ Este é meu primeiro programa!
 ```html
 <meta charset="UTT-8">
 
-Haja coração para dar os primeiros passos na lógica de programação. Precisamos primeiro nos ambientar com o mínimo necessário para que tudo dê certo.
+Haja coração para dar os primeiros passos na lógica de programação.
+Precisamos primeiro nos ambientar com o mínimo necessário para que tudo dê certo.
 ```
 
 ### **Correção**
@@ -58,9 +71,9 @@ alert("Este é um popup feito com JavaScript");
 - O conteúdo HTML deve ficar entre as tags `<body></body>`.
 - Já o conteúdo JavaScript, dentro do HTML, deve ficar entre as tags `<script></script>`.
 
-<br><hr><br>
+***
 
-## 02. Comunique-se com o usuário
+## 2. Comunique-se com o usuário
 
 ### **Escrevendo no HTML com JS**
 
@@ -115,9 +128,9 @@ document.write((200 + 100 + 300 + 400) / 4);
 
 Na primeira expressão acima, ele divide 400/4 primeiro e só depois soma os demais números, pois a divisão tem peso maior. Como o que se quer é uma média, deve-se somar antes para então dividir.
 
-<br><hr><br>
+***
 
-## 03. Torne seu programa dinâmico com variáveis
+## 3. Torne seu programa dinâmico com variáveis
 
 ### **Reduzindo alterações**
 
@@ -163,9 +176,9 @@ var media = (idadeAndrea + idadeEloisa + idadeNeuza) / 3;
 document.write("A média das idades é " + Math.round(media));
 ```
 
-<br><hr><br>
+***
 
-## 04. Crie suas próprias funcionalidades
+## 4. Crie suas próprias funcionalidades
 
 ### **Utilizando variáveis**
 
@@ -186,11 +199,11 @@ document.write("Barney tem " + (ano - 1976) + " anos");
 
 Todas as mensagens que aparecerão na tela utilizam um ano específico para calcular a idade das pessoas, então armazenar ele numa variável facilitará a modificação do mesmo.
 
-> Alterando o ano em `var ano = 2016` todas as mensagens sofrerão modificação em seus cálculos.
+- Alterando o ano em `var ano = 2016` todas as mensagens sofrerão modificação em seus cálculos.
 
 Criando a variável `var pulaLinha = "<br>"` será possível aumentar ou reduzir a quantidade de linhas que serão puladas, sem precisar procurar e alterar em todo o código.
 
-> Basta acrescentar mais `"<br><br><br>"` na variável.
+- Basta acrescentar mais `"<br><br><br>"` na variável.
 
 ### **Criando funções**
 
@@ -262,9 +275,9 @@ exibeTitulo("Bem-vindos");
 exibeParagrafo("Este é um simples programa");
 ```
 
-<br><hr><br>
+***
 
-## 05. Pratique resolvendo problemas do seu dia a dia
+## 5. Pratique resolvendo problemas do seu dia a dia
 
 ### **Reduzindo instruções**
 
@@ -306,38 +319,39 @@ var imc = calculaImc(altura, peso);
 document.write(nome + ", o seu IMC é " + imc);
 ```
 
-<br><hr><br>
+***
 
-## 06. Execute códigos diferentes dependendo da condição
+## 6. Execute códigos diferentes dependendo da condição
 
 ### **Trabalhando com condições**
 
 Existem 3 funções no JavaScript que trabalham com condição, são elas:
-- `if` / else if / else (se...)
-- `for` (para cada um, acrescente...)
-- `while` (enquanto tal coisa não acontece, faça...)
+- `if` / `else` (se algo acontecer, faça isso... senão, aquilo...)
+- `for` (para cada um, acrescente tanto, até...)
+- `while` (enquanto tal coisa não acontece, repita...)
 
 É possível ainda usar `break` na declaração, para que a rotina pare quando atingir o limite da instrução.
 
 ```js
 if (condição) {
-    afirmação1
-} else if (condição) {
-    afirmação2
+    afirmação
 } else {
     negação
 }
 ```
 
 ```js
-for (inicialização, condição, expressão final) {
+for (inicialização, condição, incremento) {
     declaração
 }
 ```
 
 ```js
+inicialização
+
 while (condição) {
-    rotina
+    declaração
+    incremento
 }
 ```
 
@@ -353,9 +367,9 @@ As operações lógicas são as que podem resultar em verdadeiro ou falso. Conhe
 9 > 8   // true
 ```
 
-<br><hr><br>
+***
 
-## 07. Repita tarefas
+## 7. Repita tarefas
 
 ### **Laços de repetição**
 
@@ -378,7 +392,7 @@ for(var multiplicador = 0; multiplicador < 10; multiplicador++) {
 }
 ```
 
-O incremento das funções `while` e `for` pode ser escrito de duas formas, quando incrementa uma variável de 1 em 1.
+O incremento das funções `while` e `for` pode ser escrito de duas formas, quando incrementa de 1 em 1.
 
 - multiplicador = multiplicador + 1
 - multiplicador++
@@ -421,11 +435,11 @@ for(var linha = 1; linha <= 3; linha++) {
 
 ### **Funções de conversão**
 
-O `parseInt` converte um texto em um número inteiro. Para fazer uma conversão em número decimal usa-se o `parseFloat`.
+O `parseInt` converte o texto de uma variável, que recebe um número, em um número inteiro. Para fazer uma conversão em número decimal usa-se o `parseFloat`.
 
-<br><hr><br>
+***
 
-## 08. Interaja de maneira diferente com o usuário
+## 8. Interaja de maneira diferente com o usuário
 
 ### **Campo de texto e botão**
 
@@ -439,9 +453,9 @@ document.querySelector("button");   // seleciona a tag button
 button.onclick...                   // cria uma ação ao usar o button
 ```
 
-<br><hr><br>
+***
 
-## 09. Trabalhe com muitos dados
+## 9. Trabalhe com muitos dados
 
 ### **Armazenando muitos dados**
 
@@ -471,3 +485,5 @@ var frutas = ["maçã", "cajú", "manga"];
 
 frutas.push("pera");
 ```
+
+[🔝 Voltar ao topo 🔝](#javascript-e-html---lógica-de-programação)

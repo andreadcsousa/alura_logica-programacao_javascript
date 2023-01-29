@@ -1,4 +1,6 @@
-# JavaScript e HTML - Lógica de Programação
+# Aprendendo Lógica de Programação
+
+Desenvolvendo um jogo de adivinhação e praticando lógica de programação com HTML e JavaScript.
 
 1. [Comece a programar hoje](#1-comece-a-programar-hoje)
 2. [Comunique-se com o usuário](#2-comunique-se-com-o-usuário)
@@ -9,6 +11,8 @@
 7. [Repita tarefas](#7-repita-tarefas)
 8. [Interaja de maneira diferente com o usuário](#8-interaja-de-maneira-diferente-com-o-usuário)
 9. [Trabalhe com muitos dados](#9-trabalhe-com-muitos-dados)
+
+Saiba mais sobre o curso [aqui](https://cursos.alura.com.br/course/logica-programacao-javascript-html).
 
 ***
 

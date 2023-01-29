@@ -488,4 +488,4 @@ var frutas = ["maçã", "cajú", "manga"];
 frutas.push("pera");
 ```
 
-[:arrow_up: Voltar ao topo :arrow_up:](#javascript-e-html---lógica-de-programação)
+[:arrow_up: Voltar ao topo :arrow_up:](#aprendendo-lógica-de-programação)

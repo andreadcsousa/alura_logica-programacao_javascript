@@ -1,14 +1,14 @@
 # JavaScript e HTML - Lógica de Programação
 
-1. [1. Comece a programar hoje](#1-comece-a-programar-hoje)
-2. [2. Comunique-se com o usuário](#2-comunique-se-com-o-usuário)
-3. [3. Torne seu programa dinâmico com variáveis](#3-torne-seu-programa-dinâmico-com-variáveis)
-4. [4. Crie suas próprias funcionalidades](#4-crie-suas-próprias-funcionalidades)
-5. [5. Pratique resolvendo problemas do seu dia a dia](#5-pratique-resolvendo-problemas-do-seu-dia-a-dia)
-6. [6. Execute códigos diferentes dependendo da condição](#6-execute-códigos-diferentes-dependendo-da-condição)
-7. [7. Repita tarefas](#7-repita-tarefas)
-8. [8. Interaja de maneira diferente com o usuário](#8-interaja-de-maneira-diferente-com-o-usuário)
-9. [9. Trabalhe com muitos dados](#9-trabalhe-com-muitos-dados)
+1. [Comece a programar hoje](#1-comece-a-programar-hoje)
+2. [Comunique-se com o usuário](#2-comunique-se-com-o-usuário)
+3. [Torne seu programa dinâmico com variáveis](#3-torne-seu-programa-dinâmico-com-variáveis)
+4. [Crie suas próprias funcionalidades](#4-crie-suas-próprias-funcionalidades)
+5. [Pratique resolvendo problemas do seu dia a dia](#5-pratique-resolvendo-problemas-do-seu-dia-a-dia)
+6. [Execute códigos diferentes dependendo da condição](#6-execute-códigos-diferentes-dependendo-da-condição)
+7. [Repita tarefas](#7-repita-tarefas)
+8. [Interaja de maneira diferente com o usuário](#8-interaja-de-maneira-diferente-com-o-usuário)
+9. [Trabalhe com muitos dados](#9-trabalhe-com-muitos-dados)
 
 ***
 

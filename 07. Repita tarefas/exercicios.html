@@ -1,0 +1,316 @@
+<meta charset="UTF-8">
+
+<!--
+    <script>
+        // funções pulaLinha, mostra e sorteia omitidas
+
+        var numeroPensado = sorteia();
+        var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+        if(chute == numeroPensado) {
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+        } else {
+            var contador = 1;
+
+            while( contador <= 10 ) {
+                mostra("Já era, você errou!");
+                contador = contador + 1;
+            }
+        }
+    </script>
+-->
+
+<p>
+    O "while" repete todas as instruções até que alcance o limite descrito no bloco de código, enquanto a condição passada para ele for "true".
+</p>
+
+<!--
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var contador = 2;
+
+        while(contador <= 100) {
+            mostra(contador);
+            contador = contador + 2; // incrementa de dois em dois
+        }
+        mostra("FIM");
+    </script>
+-->
+
+<p>
+    O contador começa valendo 2 e contra os números pares até 100, de dois em dois. Quando atinge o limite, o contador para e executa a outra instrução.
+</p>
+
+<!--
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var contador = 30;
+
+        while(contador <= 40) {
+            if( contador == 33 ) {
+                contador = contador + 1;
+            } else if(contador == 37) {    
+                contador = contador + 1;
+            } else {
+                mostra(contador);
+                contador = contador + 1; 
+            }
+        }
+        mostra("FIM");
+    </script>
+-->
+
+<p>
+    O contador preciso mostrar de 30 a 40 sem imprimir 33 e 37, então foi colocado dentro do "while", a condição "if" para resolver a questão.
+</p>
+
+<!--
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var contador = 20;
+
+        while( contador >= 0) {
+            mostra(contador);
+            contador = contador - 1;
+        }
+
+        mostra("FIM");
+    </script>
+-->
+
+<p>
+    Dessa vez, foi pedido que o contador fosse regressivo, indo de 20 a 0, incluindo os limites e concluindo a repetição com "FIM".
+</p>
+
+<!--
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var anoCopa = 1930;
+        var limite = parseInt(prompt("Qual é o ano limite?"));
+
+        while(anoCopa <= limite) {
+            mostra(anoCopa + " tem copa!");
+            anoCopa = anoCopa + 4;
+        }
+
+        mostra("Ufa! Esses foram os anos de copa até " + limite);
+    </script>
+-->
+
+<p>
+    Na questão, a declaração "anoCopa = anoCopa + 4" foi colocada fora do laõ de repetição e então foi exibido apenas 1930 na tela, puxar essa informação para dentro do looping resolve o problema.
+</p>
+
+<!--
+    <script>
+        var loginCadastrado = "alura";
+        var senhaCadastrada = "alura321";
+
+        var maximoTentativas = 3;
+        var tentativaAtual = 1;
+
+        while(tentativaAtual <= maximoTentativas) {
+            var loginInformado = prompt("Informe seu login");
+            var senhaInformada = prompt("Informe sua senha");
+
+            if(loginCadastrado == loginInformado &&
+               senhaCadastrada == senhaInformada) {
+                alert("Bem-vindo ao sistema, " + loginInformado);
+                tentativaAtual = maximoTentativas;
+            } else {
+                if (tentativaAtual == 3) {
+                    alert("Número permitido de tentativas ultrapassado!");
+                } else {
+                    alert("Login inválido. Tente novamente");
+                }
+            }
+            tentativaAtual = tentativaAtual +1  
+        }
+    </script>
+-->
+
+<p>
+    O desafio era aumentar o limite de tentativas de login para 3. Caso acertasse de primeira não faria a repetição, ou seja, só aconteceria nova tentativa se a condição não fosse atendida.
+</p>
+
+<!--
+    var idade = parseInt(prompt("Digite sua idade"));
+
+    while(isNaN(idade)) {
+        idade = parseInt(prompt("Digite sua idade"));    
+    }
+
+    alert(idade);
+-->
+
+<p>
+    A função "isNaN" verifica se o que foi digitado é "NaN", pois os operadores de igualdade não conseguem determinar isso apenas reconhecendo se o que foi digitado é um número ou não, sempre retorna falso.
+</p>
+
+<!--
+    var contador = 1;
+
+    while(contador <= 10) {
+        alert("Contador atual: " + contador);
+        contador = contador + 1;
+    }
+-->
+
+<p>
+    Para converter, corretamente, um laço de repetição de "while" para "for" é preciso ter em mente que o for utiliza inicialização e incremento como parâmetro:
+
+    <script>
+        for( var contador = 1; contador <= 10; contador = contador + 1 ) {
+            alert("Contador atual: " + contador);
+        }
+    </script>
+</p>
+
+<!--
+    for(var i = 0; i < 10; i++) {
+        alert("O resultado é " + (2 * i));
+    }
+-->
+
+<p>
+    Já na conversão de "for" para "while" é necessário mover a inicialização e o incremento para antes da função e para dentro da declaração, respectivamente:
+
+    <script>
+        var i = 0;
+
+        while(i < 10) {
+            alert("O resultado é " + (2 * i));
+            i++;
+        }
+    </script>
+</p>
+
+<!--
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+        var contador = 1;
+
+        while(contador <= totalDeEventos) {
+            var totalGastoComEventos = 0;
+            var gasto = parseFloat(prompt("Informe total gasto com evento"));
+            totalGastoComEventos = totalGastoComEventos + gasto;
+            contador++;
+        }
+
+        var media = totalGastoComEventos / totalDeEventos;
+
+        mostra("A média de gastos é " + media);
+    </script>
+-->
+
+<p>
+    A variável "totalGastoComEventos" dentro da rotina faz com que zere o total de gastos toda vez que o "while" roda. Basta mover a variável para fora do loop e ele passará a contar corretamente:
+
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+        
+        var contador = 1;
+        var totalGastoComEventos = 0;
+
+        while(contador <= totalDeEventos) {
+            var gasto = parseFloat(prompt("Informe total gasto com evento"));
+            totalGastoComEventos = totalGastoComEventos + gasto;
+            contador++;
+        }
+
+        var media = totalGastoComEventos / totalDeEventos;
+
+        mostra("A média de gastos é " + media);
+    </script>
+</p>
+
+<!--
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var resposta = ""; // ainda não tem a resposta
+
+        while(true) {
+            resposta = prompt("Qual é seu nome?");
+        }
+
+        mostra("FIM");
+    </script>
+-->
+
+<p>
+    Para sair de uma repetição, basta adicionar a função "break" ao código. No caso abaixo, enquanto a resposta não for "SAIR", o while continuará rodando e perguntando o nome:
+
+    <script>
+        // função pulaLinha e mostra omitidas
+
+        var resposta = ""; // ainda não tem a resposta
+    
+        while(true) {
+            resposta = prompt("Qual é seu nome?");
+    
+            if(resposta == "SAIR") {
+                break;
+            }
+        }
+    
+        mostra("FIM");
+    </script>
+</p>

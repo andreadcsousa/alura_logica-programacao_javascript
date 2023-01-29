@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+
+<!--
+    <input>
+    <button>Clique-me</button>
+
+    <script>
+        var entrada = document.querySelector("input");
+        var saida = document.querySelector("button");
+    </script>
+-->
+
+<p>
+    Através do "querySelector()" o JavaScript acessa as tags HTML e cria ações a serem executadas pelo usuário na página.
+</p>
+
+<!--
+    <script>
+        function tchau() {
+            alert("Tchau!!!!!")
+        }
+    </script>
+-->
+
+<p>
+    O que falta na função acima, para que o "alert" seja exibido corretamente é chamar a função utilizando "tchau();" no final do código. No exemplo abaixo, foi atribuído um botão que guarda a ação e executa ao clique do usuário, mostrando então o "Tchau!" no alert.
+    
+    <button>Clique-me</button>
+
+    <script>
+        function tchau() {
+            alert("Tchau!")
+        }
+
+        var button = document.querySelector("button");
+        button.onclick = tchau;
+    </script>
+</p>
+
+<!--
+    <input/>
+    <button>Exibir texto digitado</button>
+
+    <script>
+        var input = document.querySelector("input");
+
+        function exibeTexto() {
+            alert(input.value);
+        }
+
+        var button = document.querySelector("button");
+        button.onclick = exibeTexto;
+    </script>
+-->
+
+<blockquote>
+    Quando a função "exibeTexto" for chamada, ela passará como parâmetro da função alert o valor "input.value". Não podemos passar simplesmente input, porque o input corresponde a tag e queremos dessa tag seu valor (value). Por isso passamos input.value.
+</blockquote>
+

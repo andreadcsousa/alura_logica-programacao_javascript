@@ -1,0 +1,229 @@
+<meta charset="UTF-8">
+
+<!--
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function somaDoisNumeros(numero1, numero2) {
+        mostra("A soma dos dois números é : " + (numero1 + numero2) );
+    }
+
+    somaDoisNumeros(10, 40);
+-->
+
+<p>
+    Uma função pode receber 0 ou mais parâmetros, contanto que eles sejam descritos na função e separados por vírgula.
+</p>
+
+<!--
+    function calculaImc(altura, peso) {
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var imcAndrea = calculaImc(1.57, 80);
+    var imcEloisa = calculaImc(1.28, 30);
+
+    mostra(imcAndrea);
+    mostra(imcEloisa);
+-->
+
+<p>
+    Uma variável pode receber o cálculo da função e o resultado é retornado pela declaração feita na função.
+</p>
+
+<!--
+    var codigo = geraCodigo("A", 20, 30);
+    document.write(codigo); // mostrou GH1022
+-->
+
+<p>
+    Uma função pode retornar apenas um valor, utilizando a instrução "return" e dizendo o que será usado como valor, podendo ser um valor fixo ou de uma variável.
+
+    <script>
+        function geraCodigo(letra, numero1, numero2) {
+            return "GH1022";
+        }
+    </script>
+
+    No caso acima, a função sempre irá retornar "GH1022", independente do parâmetro passado nela.
+</p>
+
+<!--
+    function funcaoQualquer() {
+        var n1 = 10;
+        var n2 = 20;
+        var n3 = 30;
+    }
+
+    var retorno = funcaoQualquer();
+-->
+
+<p>
+    O retorno acima será "undefined", pois não foi utilizada a instrução "return".
+
+    <script>
+        function funcaoQualquer() {
+
+            var n1 = 10;
+            var n2 = 20;
+            var n3 = 30;
+
+            return n2;
+        }
+    </script>
+</p>
+
+<!--
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+        var imc = peso / (altura * altura);
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
+-->
+
+<p>
+    Novamente, não foi utilizada a instrução "return".
+</p>
+
+<!--
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+        return peso / ( altura * altura );
+    }
+-->
+
+<p>
+    O que falta no código acima são os valores correspondentes aos parâmetros, ou seja, uma variável que armazene qual altura e peso devem ser calculados na função.
+
+    <script>
+        function pulaLinha() {
+          document.write("<br>");
+        }
+      
+        function mostra(frase) {
+          document.write(frase);
+        }
+      
+        function calculaImc(altura, peso) {
+          return peso / (altura * altura);
+        }
+
+        mostra("O meu IMC é " + calculaImc(1.63, 48));
+    </script>
+</p>
+
+<!--
+    A) Ela é uma função que recebe parâmetro e não possui retorno.
+    B) Ela é uma função que não recebe parâmetro e possui retorno.
+    C) Ela é uma função que nem recebe parâmetro e nem possui retorno.
+    D) Ela é uma função que recebe parâmetro e possui retorno.
+-->
+
+<p>
+    A letra D é correta. É necessário um parâmetro para que o usuário interaja e isso gera um retorno.
+</p>
+
+<!--
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numero1 = prompt("Digite o primeiro número");
+    var numero2 = prompt("Digite o segundo número");
+
+    mostra("O valor de " + numero1 + " vezes " + numero2 + " é: " + (numero1 * numero2));
+-->
+
+<p>
+    As instruções acima pegam o retorno da função "prompt" e atribui as respectivas variáveis.
+</p>
+
+<!--
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+    mostra(resultado);
+-->
+
+<p>
+    A função A soma     10 + 20 = 30
+    A função B divide   30 /  2 = 15
+
+    A variável resultado quer a soma das funções, tem-se então: 30 + 15 = 45
+</p>
+
+<!--
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(texto) {
+        return "(" + texto + ")";
+    }
+
+    function b(texto) {
+        return "@" + texto + "@";
+    }
+
+    function c(nome, sobrenome) {
+        return b(nome + " " + a(sobrenome));
+    }
+
+    var resultado = c("Flávio", "Almeida");
+    mostra(resultado);
+-->
+
+<blockquote>
+    A função B esta recebendo a concatenação do nome com o sobrenome, mas o sobrenome é o retorno da função A.
+    
+    A função A devolverá o sobrenome entre parênteses, então esse valor será concatenado com o nome e o resultado, finalmente, será passado para a função B.
+</blockquote>

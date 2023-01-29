@@ -1,0 +1,90 @@
+<meta charset="UTF-8">
+
+<!--
+    <script>
+        document.write("O resultado da fórmula é: " + n * (10 / 20));
+    </script>
+-->
+
+<p>
+    Sabendo que "n" pode ser qualquer número de 1 a 5.
+    Para fazer o código funcionar, basta adicionar uma variável:
+
+    <script>
+        var n = 3;
+
+        document.write("O resultado da fórmula é: " + n * (10 / 20));
+    </script>
+</p>
+
+<!--
+    <script>
+        var minhaIdade = 20;
+
+        document.write("Eu nasci em " + (2016 - minhaidade));
+    </script>
+-->
+
+<p>
+    O erro do código é utilizar variáveis diferentes. O JavaScript é case sensitive, então "minhaIdade" é diferente de "minhaidade".
+</p>
+
+<!--
+    <script>
+        document.write((12 + 15 + 13) / 3);
+    </script>
+-->
+
+<p>
+    O código acima calcula uma média, mas de que?
+
+    <script>
+        var idadeLinda = 12;
+        var idadeGuaraciara = 15;
+        var idadePerola = 13;
+    
+        document.write( (idadeLinda + idadeGuaraciara + idadePerola) / 3);
+    </script>
+
+    Para facilitar o que está sendo pedido, é importante identificar e armazenar os dados em variáveis claras.
+</p>
+
+<!--
+    <script>
+        var idadeLinda = 12;
+        var idadeGuaraciara = 15;
+        var idadePerola = 13;
+
+        document.write((idadeLinda + idadeGuaraciara + idadePerola) / 3);
+    </script>
+-->
+
+<p>
+    Para melhorar ainda mais o código exposto, pode-se armazenar a soma das idades em uma nova variável, não sendo mais necessário utilizar os parenteses na soma:
+
+    <script>
+        var idadeLinda = 12;
+        var idadeGuaraciara = 15;
+        var idadePerola = 13;
+    
+        var totalIdades = idadeLinda + idadeGuaraciara + idadePerola;
+
+        document.write(totalIdades / 3);
+    </script>
+</p>
+
+<!--
+    <script>
+        var IDADE1 = 10;
+        var IDADE2 = "20";
+        var IDADE3 = 12;
+
+        document.write("A média das idades é <br>");
+        document.write((IDADE1 + IDADE2 + IDADE3) / 3);
+    </script>
+-->
+
+<p>
+    Valores entre aspas são tratados como string, então ao tirar a média das idades, a IDADE2 será concatenada, não somada.
+</p>
+

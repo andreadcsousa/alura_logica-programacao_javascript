@@ -1,0 +1,67 @@
+<meta charset=UTF-8">
+
+<!--
+    A) Uma convenção muito usada é usar tags em letra maiúscula.
+    B) Uma convenção muito usada é usar tags em letra minúscula.
+    C) Podemos usar tanto tags em maiúscula ou em minúscula que não faz diferença para o navegador.
+-->
+
+<p>B e C estão corretas. A convenção é usar letra minúscula, mas o navegador entende tags escritas com letra maiúscula no HTML.</p>
+
+<!--
+    A) <script>document.write(12 + " anos");</script>
+    B) <script>document.write(Minha idade é + 12);</script>
+    C) <script>document.write("Média calculada " + 20);</script>
+    D) <script>document.write(10 + 20);</script>
+-->
+
+<p>
+    Letra A concatena e resulta: 12 anos
+    Letra B não funciona, pois não tem aspas
+    Letra C concatena e resulta: Média calculada 20
+    Letra D não concatena, ele soma e resulta: 30
+</p>
+
+<!--
+    <meta charset="UTF-8">
+
+    <script>
+        document.write("A" + "B" + 20 + 10 + "C" + (5 + 10) + "D");
+    </script>
+-->
+
+<p>
+    Reforçando a questão do cálculo entre parenteses x a concatenação de números com texto, tem-se o resultado: AB2010C15D.
+
+    Só somaria 20 + 10 se estivesse entre parenteses, como o (5 + 10).
+
+    <script>
+        "AB" + 20 + 10 + "C" + 15 + "D"
+        "AB20" + 10 + "C" + 15 + "D"
+        "AB2010" + "C" + 15 + "D"
+        "AB2010C" + 15 + "D"
+        "AB2010C15" + "D"
+        "AB2010C15D"
+    </script>
+</p>
+
+<!--
+    <script>
+        document.write("Flávio nasceu em " + (2016 - 39));
+        document.write("<br>");
+        document.write("Joaquim nasceu em " + (2016 - 20));
+        document.write("<br>");
+        document.write("Barney nasceu em " + (2016 - 40));
+    </script>
+-->
+
+<p>
+    Para reduzir o tamanho do código, basta concatenar:
+
+    <script>
+        document.write("Flávio nasceu em " + (2016 - 39) + "<br>");
+        document.write("Joaquim nasceu em " + (2016 - 20) + "<br>");
+        document.write("Barney nasceu em " + (2016 - 40));
+    </script>
+</p>
+

@@ -1,0 +1,122 @@
+<meta charset="UTF-8">
+
+<!--
+    var nome = "Regina";    // texto, ou tecnicamente falando, uma string
+    var idade = 22;         // número
+    var temCarteira = true; // booleano
+-->
+
+<p>
+    É possível criar um array a partir das informações de um usuário. Inserindo, inclusive, tipos diferentes de informações: texto, número, "booleano", como no exemplo abaixo.
+
+    <script>
+        var registros = ["Regina", 22, true];
+    </script>
+</p>
+
+<!--
+    var pizzas = ["Portuguesa", "Mussarela", "Atum", "Margherita" ];
+-->
+
+<p>
+    Para acessar o item de uma lista, deve-se contar a partir do 0 (zero). Então para escolher a pizza de atum, o item correto do array é "pizzas[2]", para acessar esse elemento em específico.
+</p>
+
+<!--
+    var codigos  = ["IDNOCLIP" , "IDDQD", "IDKFA"];
+-->
+
+<p>
+    Para saber o tamanho do "array" pode-se utilizar o ".length", uma propriedade que usa quantidade de elementos da lista como limite da condição.
+
+    <script>
+        for(var posicao = 0; posicao = codigos.length; posicao++) { }
+    </script>
+</p>
+
+<!--
+    var jogadores = ["Saladino", "Cage", "Xur", "Rayson"];
+
+    for(var i = 1; i < jogadores.length; i++) {
+        alert(jogadores[i]);
+    }
+-->
+
+<p>
+    O problema dessa rotina é que a variável de inicialização deveria começar em 0 e está começando em 1. Da maneira que está escrito, mostrou apenas Cage, Xur e Rayson, deixando Saladino de fora.
+</p>
+
+<!--
+    var letras = ['A', 'B', 'C', 'D'];
+
+    for( var i = 0; i <= letras.length; i++ ) {
+        alert(letras[i]);
+    }
+-->
+
+<p>
+    Já nesse caso, o problema está na variável que dita a condição da rotina. Quando utilizamos o .length, não devemos utilizar o sinal de "menor-igual", pois ao fazer isso a variável será incrementada de 0 a 4, sendo que não temos o elemento 4.
+
+    <script>
+        var letras = ['A', 'B', 'C', 'D'];
+                    // 0    1    2    3
+    </script>
+</p>
+
+<!--
+    var frutas = ["abacaxi", "banana", "melão"];
+-->
+
+<p>
+    Para adicionar outro item na lista, basta utilizar a propriedade ".push", ela serve para inserir elementos no "array" sem precisar editar a lista manualmente.
+
+    <script>
+        frutas.push("abacate");
+    </script>
+</p>
+
+<!--
+    <h1>Receitas do Yan</h1>
+
+    <script>
+        var ingredientes = [];
+        var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+        var contador = 1;
+
+        while(contador <= quantidade) {
+            var ingrediente = prompt("Informe o ingrediente " + contador);
+            ingredientes.push(ingrediente);
+            contador++;
+        }
+        console.log(ingredientes);
+    </script>
+-->
+
+<p>
+    O problema dessa lista é que ingredientes repetidos podem ser adicionados, duplicando e estragando a receita, para melhorar o código é importante adicionar um verificação se o ingrediente já existe e impedir que seja adicionado novamente.
+
+    <script>
+        var ingredientes = [];
+        var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+        var contador = 1;
+    
+        while(contador <= quantidade) {
+            var ingrediente = prompt("Informe o ingrediente " + contador);
+            var existe = false;
+    
+            for( var posicao = 0; posicao < ingredientes.length; posicao++) {
+    
+                if(ingredientes[posicao] == ingrediente) {
+                    existe = true;
+                    break;
+                }
+            }
+    
+            if( existe == false) {
+                ingredientes.push(ingrediente);
+                contador++;
+            }
+        }
+        console.log(ingredientes);
+    </script>
+</p>
